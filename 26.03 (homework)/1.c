@@ -61,31 +61,31 @@ int main(){
 
     if(a_index != -1 && b_index != -1){
 
-        int sumFirstHalfOfA = 0;
-        int sumFirstHalfOfB = 0;
-        int sumSecondHalfOfA = 0;
-        int sumSecondHalfOfB = 0;
+        int countFirstHalfOfA = 0;
+        int countFirstHalfOfB = 0;
+        int countSecondHalfOfA = 0;
+        int countSecondHalfOfB = 0;
 
         for(int i = 0; i < a_index; i++){
-            sumFirstHalfOfA+=a[i];
+            countFirstHalfOfA+=1;
         }
 
         for(int i = a_index; i < N1; i++){
-            sumSecondHalfOfA+=a[i];
+            countSecondHalfOfA+=1;
         }
 
         for(int i = 0; i < b_index; i++){
-            sumFirstHalfOfB+=b[i];
+            countFirstHalfOfB+=1;
         }
 
         for(int i = b_index; i < N2; i++){
-            sumSecondHalfOfB+=b[i];
+            countSecondHalfOfB+=1;
         }
 
-        printf("Сумма чисел первой половины массива A = %d\n", sumFirstHalfOfA);
-        printf("Сумма чисел второй половины массива A = %d\n", sumSecondHalfOfA);
-        printf("Сумма чисел первой половины массива B = %d\n", sumFirstHalfOfB);
-        printf("Сумма чисел второй половины массива B = %d\n", sumSecondHalfOfB);
+        printf("Кол-во элементов первой половины массива A = %d\n", countFirstHalfOfA);
+        printf("Кол-во элементов второй половины массива A = %d\n", countSecondHalfOfA);
+        printf("Кол-во элементов первой половины массива B = %d\n", countFirstHalfOfB);
+        printf("Кол-во элементов второй половины массива B = %d\n", countSecondHalfOfB);
     }
     else printf("В одном из массивов не оказалось положительного числа!");
 
