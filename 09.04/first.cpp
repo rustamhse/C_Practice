@@ -40,10 +40,6 @@ int main(){
     }
     std::cout << std::endl;
 
-    for(int i = 0; i < myVector.size(); i++){
-        
-    }
-
     std::cout << "Put the numbers divisible by five in the middle:" << std::endl;
 
     for(int i = 0; i < myVector.size(); i++){
