@@ -36,4 +36,13 @@ int main(){
     std::cout << std::endl;
     std::cout << "v2.size now is " << v2.get_size() << std::endl;
     std::cout << "v2.count now is " << v2.get_count() << std::endl;
+    
+    std::cout << "v2 front is " << v2.front() << std::endl;;
+    std::cout << "v2 back is " << v2.back() << std::endl;
+
+    std::cout << "v2 should now be empty" << std::endl;
+    v2.empty();
+    for (int i = 0; i < v2.get_count(); i++){
+        std::cout << v2.get_data()[i] << " ";
+    }
 }

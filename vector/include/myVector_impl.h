@@ -113,3 +113,30 @@ void myVector<T>::pop_back(){
         count--;
     }
 }
+
+template <typename T>
+T myVector<T>::back() const{
+    if (count == 0){
+        throw std::invalid_argument("myVector is empty!");
+    }   
+    return data[0];
+}
+
+template <typename T>
+T myVector<T>::front() const{
+    if (count == 0){
+        throw std::invalid_argument("myVector is empty!");
+    }   
+    return data[count-1];
+}
+
+template <typename T>
+void myVector<T>::empty(){
+    if (size != 0){
+        T* temp = new T[1];
+        delete[] data;
+        data = temp;
+        count = 0;
+        size = 1;
+    }
+}

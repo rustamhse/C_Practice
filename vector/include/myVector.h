@@ -27,6 +27,9 @@ public:
 
     void push_back(const T &value);
     void pop_back();
+    T back() const;
+    T front() const;
+    void empty();
 };
 
 #include "myVector_impl.h"
